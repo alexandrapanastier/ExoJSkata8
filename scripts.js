@@ -5,10 +5,10 @@
 
 // Pour rappel pour écrire une fonction en JS on utilise la syntaxe suivante :
 
-// const nomDeMaFonction = (param1, param2) => {
+// const nomDeMaFonction = (paramètre) => {
 //   // Code de ma fonction
 // }
-// console.log(nomDeMaFonction(2, 3)) // 
+// console.log(nomDeMaFonction(On remplace le paramètre par ce qu'on désire)) // 
 
 // CODE ICI
 
