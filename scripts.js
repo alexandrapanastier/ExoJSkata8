@@ -49,3 +49,27 @@
 // CODE ICI
 
 //----------------------------------------------------------------------------------------------//
+
+// EXERCICE 5
+//Crée une fonction qui prend en paramètre une string et qui doit retourner la string inversée.
+// Exemple : "Hello" => "olleH"
+// Pour cette exercice on va utiliser la méthode split() qui permet de transformer une string en tableau. Et la méthode reverse() qui permet d'inverser un tableau : 
+// const maString = "Hello"
+// const monTableau = maString.split("")
+// console.log(monTableau) // ["H", "e", "l", "l", "o"]
+// const monTableauInverse = monTableau.reverse()
+// console.log(monTableauInverse) // ["o", "l", "l", "e", "H"]
+//Maintenant que la string est inversée il faut la remettre en string avec la méthode join().
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 6
+// Crée une fonction qui prend en paramètre un tableau et qui doit retourner le plus grand nombre du tableau.
+// Exemple : [1, 2, 3] => 3
+// Pour cette exercice on va utiliser la méthode Math.max() qui permet de retourner le plus grand nombre d'un tableau :
+// const monTableau = [1, 2, 3]
+// console.log(Math.max(...monTableau)) // 3
+
+// CODE ICI
