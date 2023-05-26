@@ -100,3 +100,32 @@
 // })
 
 // CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 9
+
+// Crée une fonction qui prend en paramètre un tableau et qui doit retourner le tableau trié par ordre croissant.
+// Exemple : [1, 3, 2] => [1, 2, 3]
+// Pour cette exercice on va utiliser la méthode sort() qui permet de trier un tableau :
+// const monTableau = [1, 3, 2]
+// console.log(monTableau.sort()) // [1, 2, 3]
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 10
+
+// Crée une fonction qui prend en paramètre une string et qui renvoie un tableau avec toutes les rotations possibles de cette string.
+// Exemple : "Hello" => ["elloH", "lloHe", "loHel", "oHell", "Hello"]
+// Pour cette exercice on va utiliser une boucle for et la méthode push() qui permet d'ajouter un élément à un tableau :
+// const maString = "Hello"
+// const monTableau = []
+// for (let i = 0; i < maString.length; i++) {
+//   const maStringRotate = maString.substring(i) + maString.substring(0, i)
+//   monTableau.push(maStringRotate)
+// }
+// console.log(monTableau) // ["Hello", "elloH", "lloHe", "loHel", "oHell"]
+
+// CODE ICI
