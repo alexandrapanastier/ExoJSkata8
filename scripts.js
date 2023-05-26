@@ -73,3 +73,30 @@
 // console.log(Math.max(...monTableau)) // 3
 
 // CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 7
+// Crée une fonction qui prend en paramètre un tableau et qui doit retourner le plus petit nombre du tableau.
+// Exemple : [1, 2, 3] => 1
+// Pour cette exercice on va utiliser la méthode Math.min() qui permet de retourner le plus petit nombre d'un tableau :
+// const monTableau = [1, 2, 3]
+// console.log(Math.min(...monTableau)) // 1
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 8
+
+// Crée une fonction qui prend en paramètre une string et qui doit retourner la string sans les voyelles.
+// Exemple : "Hello" => "Hll"
+// Pour cette exercice on va utiliser la méthode split() qui permet de transformer une string en tableau. Et la méthode filter() qui permet de filtrer un tableau :
+// const maString = "Hello"
+// const monTableau = maString.split("")
+// console.log(monTableau) // ["H", "e", "l", "l", "o"]
+// const monTableauFiltre = monTableau.filter((element) => {
+//   return element !== "e" && element !== "o"
+// })
+
+// CODE ICI
