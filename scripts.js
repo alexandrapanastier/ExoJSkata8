@@ -129,3 +129,46 @@
 // console.log(monTableau) // ["Hello", "elloH", "lloHe", "loHel", "oHell"]
 
 // CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 11
+
+// Crée une fonction qui prend en paramètre un tableau et qui doit ajouter le nombre 1 à chaque élément du tableau.
+// Exemple : [1, 2, 3] => [2, 3, 4]
+// Pour cette exercice on va utiliser la méthode map() qui permet de parcourir un tableau :
+// const monTableau = [1, 2, 3]
+// const monTableauAddition = monTableau.map((element) => {
+//   return element + 1
+// })
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 12
+
+// Crée une fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec la longueur de chaque string.
+// Exemple : ["Hello", "World"] => [5, 5]
+// Pour cette exercice on va utiliser la méthode map() qui permet de parcourir un tableau :
+// const monTableau = ["Hello", "World"]
+// const monTableauLongueur = monTableau.map((element) => {
+//   return element.length
+// })
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 13
+
+// Crée une fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les premières lettres de chaque string.
+// Exemple : ["Hello", "World"] => ["H", "W"]
+// Pour cette exercice on va utiliser la méthode map() qui permet de parcourir un tableau. 
+// Et la méthode charAt() qui permet de récupérer un caractère à une position précise :
+// const monTableau = ["Hello", "World"]
+// const monTableauPremiereLettre = monTableau.map((element) => {
+//   return element.charAt(0)
+// })
+
+// CODE ICI
