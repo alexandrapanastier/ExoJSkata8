@@ -172,3 +172,51 @@
 // })
 
 // CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 14
+
+// Crée une fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les dernières lettres de chaque string.
+// Exemple : ["Hello", "World"] => ["o", "d"]
+// Indice regarde l'exercice 13, c'est exactement la même chose sauf qu'il faut récupérer la dernière lettre et non la première.
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 15
+
+// Crée une fonction qui prend en paramètre un tableau de string et qui doit renvoyer tout les string qui ont une longueur de 5 caractères ou plus.
+// Exemple : ["Hello", "World","Test", "Salut", "Yo"] => ["Hello", "World", "Salut"]
+// Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la longueur de la string. Incice : la méthode length() permet de récupérer la longueur d'une string.
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 16
+
+// Crée une fonction qui prend en paramètre un tableau de nombre et qui doit retourner la somme de tout les nombres du tableau.
+// Exemple : [1, 2, 3] => 6
+// Pour cette exercice on va utiliser la méthode reduce() qui permet de réduire un tableau en un seul élément :
+// const monTableau = [1, 2, 3]
+// const somme = monTableau.reduce((accumulateur, element) => {
+//   return accumulateur + element
+// }, 0)
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 17
+
+// Crée une fonction qui prend en deux paramètres qui sont deux tableaux de string et qui doit retourner un tableau avec tout les éléments des deux tableaux.
+// Exemple : ["Hello", "World"] et ["Test", "Salut"] => ["Hello", "World", "Test", "Salut"]
+// Pour cette exercice on va utiliser la méthode concat() qui permet de concaténer deux tableaux :
+// const monTableau1 = ["Hello", "World"]
+// const monTableau2 = ["Test", "Salut"]
+// const monTableauConcat = monTableau1.concat(monTableau2)
+// console.log(monTableauConcat) // ["Hello", "World", "Test", "Salut"]
+
+// CODE ICI
