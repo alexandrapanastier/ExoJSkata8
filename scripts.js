@@ -181,6 +181,15 @@
 // Exemple : ["Hello", "World"] => ["o", "d"]
 // Indice regarde l'exercice 13, c'est exactement la même chose sauf qu'il faut récupérer la dernière lettre et non la première.
 
+function getLastLetter(array) {
+    const lastLetter = array.map((element) => {
+        return element.charAt(element.length - 1)
+    })
+    return lastLetter
+}
+
+console.log(getLastLetter(["Hello", "World"]))
+
 // CODE ICI
 
 //----------------------------------------------------------------------------------------------//
@@ -220,3 +229,25 @@
 // console.log(monTableauConcat) // ["Hello", "World", "Test", "Salut"]
 
 // CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 18
+
+// Crée une fonction qui prend en paramètre un tableau de string et qui doit retourner toutes les string qui ont la lettre "e".
+// Exemple : ["Poulet", "Chat", "Chien", "Cheval"] => ["Poulet", "Chien", "Cheval"]
+// Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la présence de la lettre "e". Indice : la méthode includes() permet de savoir si une string contient une lettre ou un mot.
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 19
+
+// Crée une fonction qui prend en paramètre un tableau de nombre et qui doit retourner tout les nombres qui sont pairs par ordre croissant.
+// Exemple : [ 2, 9, 6, 5, 6] => [2, 6, 6]
+// Indice : il y a plusieurs façon de faire, soit avec un for, soit avec la méthode filter() une fois ça fait utilise la méthode sort() qui permet de trier un tableau.
+
+// CODE ICI
+
+//----------------------------------------------------------------------------------------------//
