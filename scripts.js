@@ -181,14 +181,6 @@
 // Exemple : ["Hello", "World"] => ["o", "d"]
 // Indice regarde l'exercice 13, c'est exactement la même chose sauf qu'il faut récupérer la dernière lettre et non la première.
 
-function getLastLetter(array) {
-    const lastLetter = array.map((element) => {
-        return element.charAt(element.length - 1)
-    })
-    return lastLetter
-}
-
-console.log(getLastLetter(["Hello", "World"]))
 
 // CODE ICI
 
