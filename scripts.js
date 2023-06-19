@@ -344,3 +344,49 @@
 
 
 //----------------------------------------------------------------------------------------------//
+
+// EXERCICE 22
+
+//Ecrivez une fonction qui enlève les doubles lettres d'une chaîne donnée. Par exemple, "google" deviendrait "gogle"
+// Par exemple : 
+// removeDoubleLetters("google") // "gogle"
+// removeDoubleLetters("Hello World!") // "Helo World!"
+//Indice : Afin de supprimer les doubles lettres, vous devez parcourir la chaîne et comparer chaque caractère avec le caractère suivant. Si les deux caractères sont identiques, vous devez supprimer le deuxième caractère. Donc pour pouvoir comporaer chaque caractère avec le suivant, vous devez transformer la string en tableau. 
+// Indice 2 : Pour supprimer un élément d'un tableau vous pouvez utiliser la méthode splice() combiné à une boucle ou la méthode filter() qui permet de filtrer un tableau en fonction d'une condition.
+
+
+// CODE ICI
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//--------------------------------------SOLUTIONS-----------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+
+// const removeDoubleLetters = (string) => {
+//     let tableau = string.split("")
+//     let tableauFiltre = tableau.filter((element, index) => {
+//         return element !== tableau[index + 1]
+//     })
+//     return tableauFiltre.join("")
+// }
+
+
+// console.log(removeDoubleLetters("google"))
+
+// const removeDoubleLetters = (string) => {
+//     let tableau = string.split("")
+//     for (let i = 0; i < tableau.length; i++) {
+//         if (tableau[i] === tableau[i + 1]) {
+//             tableau.splice(i, 1)
+//         }
+//     }
+//     return tableau.join("")
+// }
+// console.log(removeDoubleLetters("google"))
