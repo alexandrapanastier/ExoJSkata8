@@ -390,3 +390,78 @@
 //     return tableau.join("")
 // }
 // console.log(removeDoubleLetters("google"))
+
+//----------------------------------------------------------------------------------------------//
+
+// EXERCICE 23
+
+ //Écrivez une fonction qui prend un tableau de 10 entiers (entre 0 et 9) et renvoie une chaîne de caractères sous la forme d'un numéro de téléphone.
+// Exemple :
+// createPhoneNumber([1,2,3,4,5,6,7,8,9,0]) // "(123) 456-7890"
+// Indice : Utilisez la méthode slice() pour découper le tableau en plusieurs morceaux. Puis utilisez la méthode join() pour transformer un tableau en string.
+
+// CODE ICI
+
+
+
+
+
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//--------------------------------------SOLUTIONS-----------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+
+// const createPhoneNumber = (tableau) => {
+//     let tableau1 = tableau.slice(0, 3)
+//     let tableau2 = tableau.slice(3, 6)
+//     let tableau3 = tableau.slice(6, 10)
+//     return `(${tableau1.join("")}) ${tableau2.join("")}-${tableau3.join("")}`
+// }    
+
+// console.log(createPhoneNumber([1,2,3,4,5,6,7,8,9,0]))
+
+//----------------------------------------------------------------------------------------------//
+
+
+
+
+
+// EXERCICE 24
+
+//Écrivez une fonction nommée "findMissingLetter" qui prend en paramètre un tableau d'une série de lettres (en tant que chaînes de caractères) et qui renvoie la lettre manquante de la série. Si aucune lettre n'est manquante, la fonction doit renvoyer "undefined".
+// Exemple :
+// findMissingLetter(["a","b","c","d","f"]) // "e"
+// findMissingLetter(["O","Q","R","S"]) // "P"
+// Indice : Oubliez pas de boucler et vous pouvez utiliser la méthode charCodeAt() pour récupérer le code unicode d'un caractère. 
+// Indice 2 : Vous pouvez utiliser la méthode fromCharCode() pour récupérer un caractère à partir de son code unicode.  Exemple : String.fromCharCode(65) renvoie "A". Mais attention à refaire la boucle dans l'autre sens pour pouvoir comparer les codes unicode des caractères du tableau avec les codes unicode des caractères manquants.
+// Indice 3 : Il y a plus cas comparer les codes unicode des caractères du tableau avec les codes unicode des caractères manquants pour trouver le caractère manquant avec une condition if. Et retourner le caractère manquant avec un return et la méthode fromCharCode().
+
+// CODE ICI
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//--------------------------------------SOLUTIONS-----------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+// const findMissingLetter = (tableau) => {
+//     let tableauUnicode = tableau.map((element) => {
+//         return element.charCodeAt()
+//     })
+//     for (let i = 0; i < tableauUnicode.length; i++) {
+//         if (tableauUnicode[i] !== tableauUnicode[i + 1] - 1) {
+//             return String.fromCharCode(tableauUnicode[i] + 1)
+//         }
+//     }
+// }
+
+// console.log(findMissingLetter(["a","b","c","d","f"]))
+
+//----------------------------------------------------------------------------------------------//
+
