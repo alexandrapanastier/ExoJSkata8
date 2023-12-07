@@ -584,3 +584,62 @@ const animals = [
 //     }
 
 // console.log(sortAnimals(animals))
+
+//----------------------------------------------------------------------------------------------//
+
+
+
+
+// EXERCICE 29
+
+// Un employé de théatre souhaite obtenir la liste de tous les sièges de sa salle principal. Dans la salle les places sont réparties comme suit : 
+// - Il y a 26 colonnes de sièges, numérotées de "1" à "26".
+// - Chaque colonne contient 100 sièges, numérotés de "1" à "100".
+
+// Complète la function theatreSieges() qui doit renvoyer un tableau où chaque sous-tableau répertorie les positions des siègnes dans une rangée. 
+// Exemple  du résultat attendu :
+// [
+    // ["1-1", "1-2", "1-3", ..., "1-99", "1-100"],
+    // ["2-1", "2-2", "2-3", ..., "2-99", "2-100"],
+    // ["3-1", "3-2", "3-3", ..., "3-99", "3-100"],
+    // ...
+    // ["26-1", "26-2", "26-3", ..., "26-99", "26-100"]
+// ]
+
+// Indice : Tu dois utiliser deux boucles imbriquées pour créer les sous-tableaux. La première boucle doit parcourir les colonnes et la seconde boucle doit parcourir les sièges de chaque colonne. 
+
+// CODE ICI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------SOLUTIONS-----------------------------------------------//
+
+// const theatreSieges = () => {
+//     let tableau = []
+//     for (let i = 1; i <= 26; i++) {
+//         let tableau2 = []
+//         for (let j = 1; j <= 100; j++) {
+//             tableau2.push(`${i}-${j}`)
+//         }
+//         tableau.push(tableau2)
+//     }
+//     return tableau
+// }
+
+// console.log(theatreSieges())
