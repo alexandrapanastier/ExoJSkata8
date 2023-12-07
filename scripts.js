@@ -12,6 +12,11 @@
 
 // CODE ICI
 
+
+ const cloneMe = (a,b) => {
+ return (a*b)*a;
+ }
+console.log(cloneMe(2,3));
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 2
 
@@ -22,6 +27,13 @@
 // console.log(monTableau[0]) // 1
 
 // CODE ICI
+const toto=[1,2,3];
+const getFirtsArrayElement = (array) => {
+return array[0];
+}
+
+console.log(getFirtsArrayElement(toto));
+
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 3
@@ -33,7 +45,16 @@
 // monTableau.pop()
 // console.log(monTableau) // [1, 2]
 
-// CODE ICI
+
+const momo=[1,2,3];
+const eraseLastElement = (array) => {
+return array.pop();
+}
+
+console.log(eraseLastElement(momo));
+
+
+
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 4
@@ -48,6 +69,16 @@
 
 // CODE ICI
 
+const dodo=[15,16,17];
+let sum = 0; //important to indicate from where to start counting, define the start base
+const getTheSum = (array) => {
+  for (let i=0; i<array.length; i++) {
+        sum+=array[i];
+    
+    }
+    return sum;
+}
+console.log(getTheSum(dodo));
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 5
@@ -63,6 +94,34 @@
 
 // CODE ICI
 
+const myString = "Hello";
+
+const getMyNewArrayReversed = (string) => {
+const getMyArray=string.split ("");
+const getMyArrayReversed=getMyArray.reverse();//() insert commas between letters
+const getMyString=getMyArrayReversed.join("");//("")insert nothing between letters, returns one string
+return getMyString;
+}
+ console.log(getMyNewArrayReversed("Hello"));
+
+ /* const getMyArray = (string) => {
+   return string.split ("");
+    const getMyArrayReversed = (string1) => {
+      return reverse (string1);
+        const getMyNewString = (string2) => {
+          return join (string2);
+        }
+    }
+    
+  }*/
+
+
+
+
+
+
+
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 6
@@ -74,6 +133,15 @@
 
 // CODE ICI
 
+const koko = [10, 20, 30];
+
+const getTheBiggest = (array) => {
+
+  return Math.max(...array);
+}
+
+console.log (getTheBiggest(koko));
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 7
@@ -84,6 +152,15 @@
 // console.log(Math.min(...monTableau)) // 1
 
 // CODE ICI
+
+const zozo = [3, 4, 5];
+
+const getTheSmallest = (array) => {
+
+  return Math.min(...array); //... added for this method
+}
+
+console.log (getTheSmallest(zozo));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -101,6 +178,20 @@
 
 // CODE ICI
 
+const bobo = "Hello";
+
+const getNewString = (array) => {
+  const getArray=array.split("");
+  const getNoVowels=getArray.filter((element)=> { 
+    return element !== "e" && element !== "o"
+  });
+  const getJoined=getNoVowels.join('');
+  return getJoined;
+};
+
+console.log(getNewString("Hello"));
+
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 9
@@ -112,6 +203,13 @@
 // console.log(monTableau.sort()) // [1, 2, 3]
 
 // CODE ICI
+
+const tutu = [1, 3, 2]
+
+const getArrayReverse = (array) => {
+return getReversed=array.sort();
+}
+console.log(getArrayReverse(tutu));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -130,6 +228,19 @@
 
 // CODE ICI
 
+const mumu = "Hello";
+const pupu = [];
+
+const getAllRotations=(string)=> {
+ 
+  for (let i = 0; i < string.length; i++) {
+    const getMyStringRotate = string.substring(i) + string.substring(0,i);
+  pupu.push(getMyStringRotate);
+  }
+  return pupu; //return must be placed outside the loop; inside the function
+}
+console.log(getAllRotations(mumu));
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 11
@@ -143,6 +254,16 @@
 // })
 
 // CODE ICI
+const myArray = [1, 2, 3];
+
+const getNumbersIncreased = (array) => {
+  const myIncreasedArray=array.map((element) => { //map requires a call back, fonction anonyme que defini, pas rappelé, map appele la fonction, ce qui est (), est son parametre
+    return element + 1; //on peut ajouter des directions a return. Return element for new array.
+  
+  })
+  return myIncreasedArray;//return : exit immediatement la boucle ou la fonction
+} 
+console.log(getNumbersIncreased(myArray));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -158,6 +279,16 @@
 
 // CODE ICI
 
+const bibou = ["Hello", "World"];
+
+const getTheLengthOfString =(array) => {
+  const lengthOfString=array.map((element) => {//method map() is a higher order function, it allows to transform each element by applying a provided function. It calls afunction for every element, returns an array.
+    return element.length;
+  }) ;
+  return lengthOfString;
+};
+
+console.log(getTheLengthOfString(bibou));
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 13
@@ -173,6 +304,18 @@
 
 // CODE ICI
 
+const myBigArray = ["Hello", "World"];
+
+const getArrayOfFirstLetter = (array) => {
+const myFatArray=array.map((element) => {
+  return element.charAt(0);
+});
+return myFatArray;
+}
+ console.log(getArrayOfFirstLetter(myBigArray));
+
+
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 14
@@ -184,6 +327,19 @@
 
 // CODE ICI
 
+const kiki = ["Hello", "MyWorld"];
+
+const getTheLastLetterElement=(array)=>{
+const myCrazyArray=array.map((element) => {
+console.log(element); //mettre des variables existants, si non, va renvoyer indefini
+  return element.charAt(element.length-1); //map et chartAt sont des fonctions, () ces parametres, la derniere console.log appelle
+});
+console.log(array[1]);
+return myCrazyArray;
+}
+console.log(getTheLastLetterElement(kiki));
+
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 15
@@ -193,6 +349,17 @@
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la longueur de la string. Incice : la méthode length() permet de récupérer la longueur d'une string.
 
 // CODE ICI
+
+const bibi = ["Hello", "World","Test", "Salut", "Yo"];
+
+const getCertainStrings = (array) => {
+  const getMyStrings=array.filter((element)=> {
+  return element.length>=5;
+});
+return getMyStrings;
+}
+
+console.log(getCertainStrings(bibi));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -207,6 +374,8 @@
 // }, 0)
 
 // CODE ICI
+
+
 
 //----------------------------------------------------------------------------------------------//
 
