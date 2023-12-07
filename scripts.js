@@ -183,7 +183,7 @@ const bobo = "Hello";
 const getNewString = (array) => {
   const getArray=array.split("");
   const getNoVowels=getArray.filter((element)=> { 
-    return element !== "e" && element !== "o"
+    return element !== "e" && element !== "o" //une boolean, renvoie soit true soit false, c'est une expression
   });
   const getJoined=getNoVowels.join('');
   return getJoined;
@@ -311,7 +311,7 @@ const myFatArray=array.map((element) => {
   return element.charAt(0);
 });
 return myFatArray;
-}
+};
  console.log(getArrayOfFirstLetter(myBigArray));
 
 
@@ -336,7 +336,7 @@ console.log(element); //mettre des variables existants, si non, va renvoyer inde
 });
 console.log(array[1]);
 return myCrazyArray;
-}
+};
 console.log(getTheLastLetterElement(kiki));
 
 
@@ -357,7 +357,7 @@ const getCertainStrings = (array) => {
   return element.length>=5;
 });
 return getMyStrings;
-}
+};
 
 console.log(getCertainStrings(bibi));
 
@@ -375,9 +375,16 @@ console.log(getCertainStrings(bibi));
 
 // CODE ICI
 
+const chatchat=[1, 2, 3];
 
+const getTheArrayWithSumChatChat=(array)=> {
+const getTheSum=array.reduce((accumulator, element) => {//accumulator:  It is the accumulated value from the previous iterations and starts with the initialValue if provided.
+  return element+accumulator;//The current element being processed in the array.
+}, 0); //initial value of the accumulator,  if not provided, the first element of the array is used as the initial accumulator value.
+return getTheSum;
+};
 
-//----------------------------------------------------------------------------------------------//
+console.log(getTheArrayWithSumChatChat(chatchat));
 
 // EXERCICE 17
 
@@ -391,6 +398,17 @@ console.log(getCertainStrings(bibi));
 
 // CODE ICI
 
+const zouzou=["Hello", "World"];
+const dada=["Test", "Salut"];
+
+const getAllElements=(array1, array2)=>{
+  const myArrayConcat=array1.concat(array2)
+    return myArrayConcat;
+  };           // In JavaScript, methods are functions that are associated with objects. concat() is not a call back function, just a function!
+
+console.log(getAllElements(zouzou, dada));
+
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 18
@@ -401,6 +419,26 @@ console.log(getCertainStrings(bibi));
 
 // CODE ICI
 
+const laFerme=["Poulet", "Chat", "Chien", "Cheval"];
+//filter() method takes a callback function as its argument. The callback function is used to define the filtering criteria, determining which elements should be included in the new array created by filter().
+const getElementsWithE=(array)=>{
+  const getElements=array.filter((element)=>{//si tu renvoie "true" de return, filter garde l'objet, si non, il ignore
+    return element.indexOf("e") !== -1; // qd tu trouve e (ex. position3 pour chien), 3> -1, ca vaut pas 3, donc c'est vrai, donc tu me me l'envoie
+    
+    /*if (element.indexOf("e") == -1) { // -1 ici pareil que "not found", c'est indiqué dans le doc de la function
+      return false;
+    }
+    else { // e is found
+      return true;
+    }*/
+
+  });
+
+  return getElements;
+};
+
+console.log(getElementsWithE(laFerme));
+
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 19
@@ -410,6 +448,19 @@ console.log(getCertainStrings(bibi));
 // Indice : il y a plusieurs façon de faire, soit avec un for, soit avec la méthode filter() une fois ça fait utilise la méthode sort() qui permet de trier un tableau.
 
 // CODE ICI
+
+const oiseau=[ 2, 9, 6, 5, 6];
+
+const getMeArrayOfAscendingEvens=(array)=>{
+const getMeEvens1=array.filter((element)=>{
+return element % 2 == 0;
+});
+getMeEvens1.sort((a,b)=>{
+return a-b; //ordre ascendant
+});
+return getMeEvens1; //If i omit this return, the function won't return anything
+};
+console.log(getMeArrayOfAscendingEvens(oiseau));
 
 //----------------------------------------------------------------------------------------------//
 
