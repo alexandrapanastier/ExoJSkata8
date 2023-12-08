@@ -496,7 +496,20 @@ console.log(getMeArrayOfAscendingEvens(oiseau));
 
 // CODE ICI
 
+const myPerfectString ="The quick brown fox jumps over the lazy dog";
 
+const getTheLength=(string)=>{
+  const getMyArray=myPerfectString.split(" ");
+   const getTheLength=getMyArray.map((element)=>{ //callback ici, je cree ma fonction en tant que parametre de map
+    return element.length;
+      });
+      const myArraySorted=getTheLength.sort((a,b)=>{
+        return a-b;
+      });
+
+      return getTheLength[0];
+}
+console.log(getTheLength(myPerfectString));
 
 
 
@@ -537,7 +550,24 @@ console.log(getMeArrayOfAscendingEvens(oiseau));
 
 // CODE ICI
 
+let myString1="love";
+let myString2="vole";
 
+const getTheAnagramAnswer=(string1, string2)=>{ //je creer ma propre fonction, donc fleche
+  let getAnArray1=myString1.split(" ");
+  let getAnArray2=myString1.split(" "); //pas de fleche, car j'appele uniquement la fonction, qui est deja fourni dans JS
+  let myArraySorted1=getAnArray1.sort();
+  let myArraySorted2=getAnArray2.sort();
+
+  if (myArraySorted1.join("")==myArraySorted2.join("")) { 
+    return true
+      }
+      else {
+        return false
+      };
+};
+
+console.log(getTheAnagramAnswer(myString1, myString2));
 
 
 
