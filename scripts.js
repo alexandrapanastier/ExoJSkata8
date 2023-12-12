@@ -610,6 +610,15 @@ console.log(getTheAnagramAnswer(myString1, myString2));
 // CODE ICI
 
 
+const getTheArray=(string)=>{
+let theArrayy=string.split("");//le string doit devenir un tableau pour acceder a ces elements
+let getFiltered=theArrayy.filter((letter, index)=>{
+  return letter !==theArrayy[index+1] 
+});
+  return getFiltered.join("")
+};
+
+console.log(getTheArray("mySString"));
 
 
 
