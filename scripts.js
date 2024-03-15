@@ -817,17 +817,91 @@ let tableauClass = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "
 
 // EXERCICE 33
 
-//Écrivez une fonction nommée "findMissingLetter" qui prend en paramètre un tableau d'une série de lettres (en tant que chaînes de caractères) et qui renvoie la lettre manquante de la série. Si aucune lettre n'est manquante, la fonction doit renvoyer "undefined".
-// Exemple :
-// findMissingLetter(["a","b","c","d","f"]) // "e"
-// findMissingLetter(["O","Q","R","S"]) // "P"
-
-//Indice : Oubliez pas la méthode charCodeAt() est utile pour récupérer le code unicode d'un caractère.
-//Le unicode est une norme informatique qui permet de représenter des caractères de toutes les langues du monde. Chaque caractère possède un code unicode qui lui est propre. Par exemple, le code unicode de "A" est 65, le code unicode de "B" est 66, le code unicode de "C" est 67, etc. Pour récupérer le code unicode d'un caractère vous devez utiliser la méthode charCodeAt(). Cette méthode prend en paramètre l'index du caractère dans la string. Par exemple, si vous voulez récupérer le code unicode du premier caractère de la string vous devez utiliser la méthode charCodeAt(0). Si vous voulez récupérer le code unicode du deuxième caractère de la string vous devez utiliser la méthode charCodeAt(1). Et ainsi de suite.
 
 
+// Implémenter la fonction filterDuplicate qui prend un tableau en paramètre et qui doit renvoyer un tableau sans doublons.
 
-// CODE ICI
+// Exemple du résultat attendu :
+// filterDuplicate([1, 2, 2, 3, 4, 4, 5]) // [1, 2, 3, 4, 5]
+
+// const filterDuplicate = (tableau) => {
+//     let tableau2 = []
+//     for (let i = 0; i < tableau.length; i++) {
+//         if (!tableau2.includes(tableau[i])) {
+//             tableau2.push(tableau[i])
+//         }
+//     }
+//     return tableau2
+// }
+
+// console.log(filterDuplicate([1, 2, 2, 3, 4, 4, 5]))
+
+// const filterDuplicate2 = (tableau) => {
+//     return tableau.filter((element, index) => {
+//         return tableau.indexOf(element) === index
+//     })
+// }
+// console.log(filterDuplicate2([1, 2, 2, 3, 4, 4, 5]))
+
+// const filterDuplicate3 = (tableau) => {
+//   const uniqueSet = new Set(tableau)
+//   const uniqueSetArray = Array.from(uniqueSet)
+//   return uniqueSetArray
+// }
+
+// console.log(filterDuplicate3([1, 2, 2, 3, 4, 4, 5]))
+
+// const filterDuplicate4 = (tableau) => {
+//   tableau.map((element, index) => {
+//     if (tableau.indexOf(element) !== index) {
+//       tableau.splice(index, 1)
+//     }
+//   }
+//   )
+//   return tableau
+// }
+
+// console.log(filterDuplicate4([1, 2, 2, 3, 4, 4, 5]))
+
+
+
+
+
+// EXERCICE 34
+
+
+// Écrivez une fonction judgeFaces qui prend un tableau de grimaces représentées par des chaînes de caractères Emoji en entrée et renvoie un objet avec les scores pour chaque type de grimace. Vous devez utiliser la méthode map et la méthode reduce
+
+// Exemple du résultat attendu :
+// judgeFaces(["😀", "😂", "😄", "😂", "😁", "😂", "😄", "😀"]) // { '😀': 10, '😁': 4, '😂': 9, '😃': 0, '😄': 2 }
+const scores = {
+  "😀": 5,
+  "😁": 4,
+  "😂": 3,
+  "😃": 2,
+  "😄": 1,
+};
+
+
+const judgeFaces = (faces) => {
+  // CODE ICI
+};
+
+
+
+console.log(judgeFaces(["😀", "😂", "😄", "😂", "😁", "😂", "😄", "😀"]));
+/*
+{
+  '😀': 10,
+  '😁': 4,
+  '😂': 9,
+  '😃': 0,
+  '😄': 2
+}
+*/
+
+
+
 
 
 
@@ -843,16 +917,16 @@ let tableauClass = ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "
 
 //-----------------------------------------------SOLUTIONS-----------------------------------------------//
 
+/*
+const judgeFaces = (faces) => {
+  return faces.reduce((acc, face) => {
+    if (face in acc) {
+      acc[face] += scores[face];
+    } else {
+      acc[face] = scores[face];
+    }
+    return acc;
+  }, {});
+};
 
-// const findMissingLetter = (tableau) => {
-//     let tableauUnicode = tableau.map((element) => {
-//         return element.charCodeAt()
-//     })
-//     for (let i = 0; i < tableauUnicode.length; i++) {
-//         if (tableauUnicode[i] !== tableauUnicode[i + 1] - 1) {
-//             return String.fromCharCode(tableauUnicode[i] + 1)
-//         }
-//     }
-// }
-
-// console.log(findMissingLetter(["a","b","c","d","f"]))
+*/
