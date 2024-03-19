@@ -930,3 +930,65 @@ const judgeFaces = (faces) => {
 };
 
 */
+
+
+// EXERCICE 35
+
+// Ecrivez une fonction qui prend en paramètre un tableau de lettre et qui doit retourner un mot formé par ces lettres.
+// Exemple : ["H", "e", "l", "l", "o"] => "Hello"
+
+const wordFromLetters = (tableau) => {
+ // CODE ICI
+}
+
+console.log(wordFromLetters(["H", "e", "l", "l", "o"]))
+
+
+
+// EXERCICE 36
+
+//  // Écrivez une fonction cartes qui génère un jeu de 52 cartes à jouer. Chaque carte est représentée par une chaîne, avec la valeur de la carte suivie de sa couleur. Elles sont représentées par les caractères suivants : ♠, ♥, ♦, ♣. Les valeurs des cartes sont représentées par les chaînes suivantes : 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A. La fonction doit renvoyer un tableau de chaînes, avec chaque chaîne représentant une seule carte.
+
+// Exemple : 
+
+// [  "2♠", "3♠", "4♠", "5♠", "6♠", "7♠", "8♠", "9♠", "10♠", "J♠", "Q♠", "K♠", "A♠",  "2♥", "3♥", "4♥", "5♥", "6♥", "7♥", "8♥", "9♥", "10♥", "J♥", "Q♥", "K♥", "A♥",  "2♦", "3♦", "4♦", "5♦", "6♦", "7♦", "8♦", "9♦", "10♦", "J♦", "Q♦", "K♦", "A♦",  "2♣", "3♣", "4♣", "5♣", "6♣", "7♣", "8♣", "9♣", "10♣", "J♣", "Q♣", "K♣", "A♣"]
+
+
+const cards = () => {
+ 
+}
+console.log(cards()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------SOLUTIONS-----------------------------------------------//
+
+// const cards = () => {
+//   let tableau = []
+//   let tableauValeur = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+//   let tableauCouleur = ["♠", "♥", "♦", "♣"]
+//   for (let i = 0; i < tableauValeur.length; i++) {
+//     for (let j = 0; j < tableauCouleur.length; j++) {
+//       tableau.push(tableauValeur[i] + tableauCouleur[j])
+//     }
+//   }
+//   return tableau
+// }
+
+// console.log(cards())
